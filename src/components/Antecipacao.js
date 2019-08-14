@@ -1,7 +1,6 @@
 // React
 import React from 'react';
-// Ant Design
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+
 // Components
 import HomeBox from "./HomeBox";
 // CSS

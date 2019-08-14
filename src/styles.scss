@@ -1,21 +1,26 @@
+// Global app stuff
 .App {
   font-family: sans-serif;
 }
 
-.todoContainer {
-  text-align: center;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
+$primary-color-ant: #22B24C;
+$secondary-color-ant: #fff;
+.ant-menu-item-selected i, .ant-menu-item-selected span {
+  color: $primary-color-ant !important;
 }
-
-
-$primary-color: #22B24C;
-.ant-menu-item-selected, .ant-menu-item-active, .ant-menu-item:hover, 
-.ant-menu-submenu-active, .ant-menu-submenu-selected, .ant-menu-submenu-title:hover, .ant-menu-submenu:hover {
-  color: $primary-color;
+.ant-menu-item-selected {
+  background-color: $secondary-color-ant !important;
 }
 
 .ant-menu-item::after {
-  border-right-color: $primary-color !important;
+  border-right-color: $primary-color-ant !important;
 }
+
+.ant-menu, .ant-layout-sider {
+  background: $primary-color-ant !important;
+}
+
+// Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";

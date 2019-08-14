@@ -1,16 +1,18 @@
 // React
 import React from 'react';
 // Ant Design
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+// import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 // PropTypes
 import PropTypes from "prop-types";
 // CSS
 import "./HomeBox.scss"
 
 class HomeBox extends React.Component {
-    state = {
-
-    };
+    constructor(props) {
+        super(props)
+        this.state = {};
+    }
+    
 
     render() {
         return (
@@ -22,7 +24,7 @@ class HomeBox extends React.Component {
 }
 
 HomeBox.propTypes = {
-    children: PropTypes.oneOf([PropTypes.string, PropTypes.node])
+    children: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
 }
 
 
