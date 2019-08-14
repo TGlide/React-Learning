@@ -5,20 +5,22 @@ import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 // Components
 import HomeBox from "./HomeBox";
 // CSS
-import "./Antecipacao.scss"
+import "./Saldo.scss"
 
+const { Header, Content, Footer, Sider } = Layout;
+const { SubMenu } = Menu;
 
-class Antecipacao extends React.Component {
+class Saldo extends React.Component {
   state = {
   };
 
   render() {
     return (
         <HomeBox>
-          Hey
+          Saldo
         </HomeBox>
     );
   }
 }
 
-export default Antecipacao;
+export default Saldo;

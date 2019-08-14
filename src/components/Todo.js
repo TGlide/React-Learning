@@ -2,7 +2,8 @@
 import React from "react";
 // Ant Design
 import { Input, List, Icon, DatePicker } from "antd";
-import "antd/dist/antd.css";
+// Components
+import HomeBox from "./HomeBox";
 // CSS
 import "./Todo.scss"
 
@@ -72,7 +73,7 @@ export default class Todo extends React.Component {
 
   render() {
     return (
-      <div className="todoContainer" style={{ minWidth: '100%', padding: 12, background: '#fff', minHeight: 360 }}>
+      <HomeBox>
         <h1>TODO App</h1>
 
         <Input
@@ -94,7 +95,7 @@ export default class Todo extends React.Component {
             />
           )}
         />
-      </div>
+      </HomeBox>
     );
   }
 }

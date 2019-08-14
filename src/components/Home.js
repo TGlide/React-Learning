@@ -4,9 +4,11 @@ import React from 'react';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 // Components
 import Todo from "./Todo";
+import Saldo from "./Saldo";
 import Antecipacao from "./Antecipacao"
 // CSS
 import "./Home.scss"
+import HomeBox from './HomeBox';
 
 const { Header, Content, Footer, Sider } = Layout;
 // const { SubMenu } = Menu;
@@ -36,13 +38,13 @@ class Home extends React.Component {
   changeSection = (sectionName) => {
     let new_section;
     if (sectionName === "saldo") {
-      new_section = <Todo />
+      new_section = <Saldo />
     } else if (sectionName === "antecipacao") {
       new_section = <Antecipacao />
     } else if (sectionName === "credito") {
-      new_section = <div>
+      new_section = <HomeBox>
         Crédito uou
-      </div>
+      </HomeBox>
     }
 
     this.setState(() => ({
@@ -53,7 +55,7 @@ class Home extends React.Component {
 
   render() {
     if (this.state.section == null)
-      this.changeSection("antecipacao");
+      this.changeSection("saldo");
     
     return (
       <Layout style={{ minHeight: '100vh' }}>
