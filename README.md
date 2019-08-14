@@ -1,4 +1,11 @@
+# Description
+[![Frontend React](https://img.shields.io/badge/Made%20with-React-5ED3F3?style=for-the-badge&logo=react)](https://reactjs.org/)
+
+Esse projeto contém componentes criados no meu processo de aprendizado de React.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Feito por Thomas G. Lopes!
 
 ## Available Scripts
 
